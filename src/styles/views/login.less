@@ -1,0 +1,98 @@
+.login-wrapper {
+  background-image: url('/src/assets/images/login-bg.png');
+  background-size: contain;
+  padding-top: 131px;
+  background-repeat: no-repeat;
+  background-color: #242424;
+
+  .login-container {
+    box-sizing: border-box;
+    width: 100%;
+    height: calc(100vh - 131px);
+    background: rgba(36, 36, 36, 0.3);
+
+    .content {
+      backdrop-filter: blur(9px);
+      padding: 30px 24px;
+      border-radius: 16px 16px 0px 0px;
+      border-top: 1px solid rgba(127, 127, 127, 1);
+      // border-image: linear-gradient(181deg, rgba(188, 188, 188, 0.44), rgba(127, 127, 127, 0), rgba(127, 127, 127, 0)) 1 1;
+
+      .login-title {
+        font-family: PingFangSC, PingFang SC;
+        font-weight: 600;
+        font-size: 24px;
+        color: #FFFFFF;
+        line-height: 33px;
+        text-align: center;
+        font-style: normal;
+        margin-bottom: 32px;
+      }
+
+      .login-form {
+        width: 100%;
+        margin-bottom: 16px;
+
+        .input-box {
+          display: flex;
+          align-items: center;
+          height: 50px;
+          background: rgba(27, 27, 27, 0.4);
+          border-radius: 25px;
+          border: 1px solid #636363;
+          padding: 0 22px;
+
+          .icon {
+            width: 17px;
+            height: 19px;
+            margin-right: 9px;
+          }
+
+          &:first-of-type {
+            margin-bottom: 24px;
+          }
+
+          .input {
+            height: 100%;
+            flex: 1;
+            outline: none;
+            border: none;
+            background: transparent;
+            color: #AFAFAF;
+          }
+        }
+      }
+
+      .forget-pwd {
+        text-align: right;
+        margin-bottom: 40px;
+
+        .link {
+          color: #AFAFAF;
+          font-size: 14px;
+        }
+      }
+
+      .login-btn {
+        height: 50px;
+        line-height: 50px;
+        background: #3FC186;
+        border-radius: 29px;
+        font-size: 16px;
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .sign-tip-box {
+        text-align: center;
+        color: #AFAFAF;
+
+        .link {
+          color: #3FC186;
+        }
+      }
+    }
+
+  }
+}
